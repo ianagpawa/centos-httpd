@@ -8,14 +8,13 @@ Clone repo: `git clone https://github.com/ianagpawa/centos-httpd.git`
 ### Prerequesites
 #### Windows
 Install `Docker Desktop on Windows` (stable):
-* PowerShell
 * [Download from DockerHub and follow instructions](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
     * May require tweaking Virtualization in BIOS, but is typically not needed on latest systems.
 
 ### Build image
-In PowerShell, navigate to folder directory for where `centos-httpd` was cloned.\
-Use command: `docker build --tag <image-name>:<version-number> .`\
-e.g.: `docker build --tag httpd-centos:1.0 .`
+In terminal, navigate to the folder directory where `centos-httpd` was cloned.\
+    Use command: `docker build --tag <image-name>:<version-number> .`\
+    e.g.: `docker build --tag httpd-centos:1.0 .`
 
 ### Run image as a container
 Use command: `docker run --detach --publish <port-number> --name <container-name> <image-name>:<version-number>`\
